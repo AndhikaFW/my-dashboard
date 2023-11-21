@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Page Switcher</title>
+    <link rel="stylesheet" href="main.css" />
+</head>
+<body>
+       <main>
+        <section class="pages">
+            <div class="page is-active" data-page="1">
+		<iframe class="content" src="http://host.local:8061"></iframe> 
+            </div>
+            <div class="page" data-page="2">
+                <iframe class="content" src="http://host.local:8501"></iframe> <
+            </div>
+            <div class="page" data-page="3">
+                <iframe class="content" src="http://host.local:8080"></iframe> 
+            </div>
+            <div class="page" data-page="4">
+                <iframe class="content" src="http://host.local:8080"></iframe>  
+            </div>
+        </section>
+    </main>
+    <footer>
+	    <nav>
+    		<ul class="tabs">
+			<li data-name="Home" class="tab is-active"><a data-switcher data-tab="1" class="material-icons">home</a></li>
+			<li data-name="Time" class="tab"><a data-switcher data-tab="2" class="material-icons">watch_later</a></li>
+			<li data-name="Search" class="tab"><a data-switcher data-tab="3" class="material-icons">zoom_in</a></li>
+			<li data-name="Light" class="tab"><a data-switcher data-tab="4" class="material-icons">wb_sunny</a></li>
+  			<li data-name="Video" class="tab"><a data-switcher data-tab="4" class="material-icons">face</a></li>
+    		</ul>
+	</nav>
+    </footer>
+
+    <script src="main.js"></script>
+</body>
+</html>
